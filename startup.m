@@ -1,28 +1,20 @@
 function startup
+    format compact
 
-format compact
+    % Root folder automatically detected
+    PLATEROOT = fileparts(mfilename('fullpath'));
 
-PLATEROOT ='C:\Users\jmah\Desktop\Age-2-4';
+    % Add subfolders dynamically
+    folders = { ...
+        'Bspline', 'Comparision', 'Data', 'DataFun', 'Fecundity', ...
+        'generalFun', 'GTM', 'Maturity', 'Mortality', 'Plots', ...
+        'Recruit', 'Valnerability', 'simulation', 'Kmeans', ...
+        'MarkovProperties', 'Write', 'GTM_Normal', 'GTM_Gamma', ...
+        'GTM_LogNormal' ...
+    };
 
-% Include the necessary paths.
-addpath ([PLATEROOT '\Deterministic']);
-addpath ([PLATEROOT '\Deterministic\Bspline']);
-addpath ([PLATEROOT '\Deterministic\Comparision']);
-addpath ([PLATEROOT '\Deterministic\Data']);
-addpath ([PLATEROOT '\Deterministic\DataFun']);
-addpath ([PLATEROOT '\Deterministic\Fecundity']);
-addpath ([PLATEROOT '\Deterministic\generalFun']);
-addpath ([PLATEROOT '\Deterministic\GTM']);
-addpath ([PLATEROOT '\Deterministic\Maturity']);
-addpath ([PLATEROOT '\Deterministic\Mortality']);
-addpath ([PLATEROOT '\Deterministic\Plots']);
-addpath ([PLATEROOT '\Deterministic\Recruit']);
-addpath ([PLATEROOT '\Deterministic\Valnerability']);
-addpath ([PLATEROOT '\Deterministic\simulation']);
-addpath ([PLATEROOT '\Deterministic\Kmeans']);
-addpath ([PLATEROOT '\Deterministic\MarkovProperties']);
-addpath ([PLATEROOT '\Deterministic\Write']);
-addpath ([PLATEROOT '\Deterministic\GTM_Normal']);
-addpath ([PLATEROOT '\Deterministic\GTM_Gamma']);
-addpath ([PLATEROOT '\Deterministic\GTM_Log-Normal']);
-return
+    for i = 1:length(folders)
+        addpath(fullfile(PLATEROOT, 'src', folders{i}));
+    end
+
+end
