@@ -1,0 +1,43 @@
+# Ignore MATLAB backup files
+*.asv
+*.m~
+*.mlx.backup
+
+# Ignore compiled mex files
+*.mex*
+*.obj
+*.o
+*.dll
+*.so
+*.dylib
+
+# Ignore Simulink caches
+slprj/
+sccprj/
+slxc/
+
+# Ignore code generation artifacts
+codegen/
+*_ert_rtw/
+_mlint/
+*.map
+*.mk
+*.bin
+*.log
+
+# Ignore temporary and autosave files
+*.autosave
+*.tmp
+*.bak
+*.old
+
+# Ignore user-specific MATLAB preferences
+matlabprefs.mat
+matlab.prf
+
+# Ignore macOS metadata
+.DS_Store
+
+# Ignore Windows metadata
+Thumbs.db
+desktop.ini
