@@ -1,4 +1,5 @@
 % B-spline based growth transition matrix for capelin in Barents sea
+% ** Estimated run time of this code is less than 1 minutes **
 
 clear; clc;
 rng('default');
