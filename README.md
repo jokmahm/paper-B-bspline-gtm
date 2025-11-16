@@ -44,12 +44,6 @@ The methodology includes:
 
 ---
 
-## 📄 Citation
-
-If you use this code, please cite:
-
-Mahmood Jokar, Sam Subbey, Talal Rahman, Insights into population dynamics of fish populations using growth transition matrices, submitted to xxx, 2025.
-
 ---
 
 ## 📝 License
