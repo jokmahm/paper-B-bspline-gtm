@@ -1,4 +1,5 @@
 % In this program I test new growth transition matrix
+% ** Estimated run time of this code is 10 minutes **
 
 clear; clc;
 rng('default');
